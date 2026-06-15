@@ -9,7 +9,7 @@ CIs, Bayesian posteriors, the right unit of analysis, and the discipline
 to call a negative result a negative result.
 
 [![GitHub followers](https://img.shields.io/github/followers/Pouyasharp?label=Followers&style=flat-square)](https://github.com/Pouyasharp)
-[![Public repos](https://img.shields.io/badge/repos-10-1f77b4?style=flat-square)](https://github.com/Pouyasharp?tab=repositories)
+[![Public repos](https://img.shields.io/badge/repos-14-1f77b4?style=flat-square)](https://github.com/Pouyasharp?tab=repositories)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green?style=flat-square)](./LICENSE)
 
 </div>
@@ -22,8 +22,8 @@ to call a negative result a negative result.
   weather-sensitivity analysis, end-to-end from data ingest to board deck.
 - **Time-series econometrics** — ARIMA / ARIMAX / SARIMAX, unit-root
   testing, cointegration, lag analysis, structural breaks.
-- **Causal inference** — DiD, IV, synthetic control, RDD; the discipline
-  to know when a regression is descriptive and stop there.
+- **Causal inference** — DiD, IV, synthetic control, RDD, PSM, DML;
+  the discipline to know when a regression is descriptive and stop there.
 - **Agentic systems** — ReAct, Plan-and-Execute, human-in-the-loop
   approval flows, confidence-gated action generation.
 
@@ -156,6 +156,47 @@ The standalone deep-dive of the time-series stage in
 
 </td>
 </tr>
+<tr>
+  <td>
+
+#### [causal-inference](https://github.com/Pouyasharp/causal-inference)
+
+PhD-level **deep-dive** on the causal-inference half of Stage 4:
+
+- 440-line `SKILL.md` — IV / 2SLS (with first-stage F, AR CI, Sargan J),
+  DiD (with the TWFE pathology and modern estimators), RDD (local-linear
+  with IK bandwidth, donut-hole), PSM (with balance checks and
+  Abadie-Imbens SEs), Synthetic Control (with in-space placebos), DML
+  (with 5-fold cross-fitting)
+- 5 self-contained Python demos (~1,500 LOC) with **planted effects** so
+  you can verify each estimator recovers the truth
+- statsmodels / linearmodels / dowhy / econml gotcha bank
+- 8-item self-assessment rubric + 15-paper reading list
+
+</td>
+  <td>
+
+#### [cointegration-vecm](https://github.com/Pouyasharp/cointegration-vecm) (scaffold)
+
+PhD-level deep-dive on the **cointegration / VECM** half of Stage 3
+(planned; currently a scaffold):
+
+- 1 working demo: Engle-Granger 2-step on synthetic data
+  (spurious vs cointegrated series)
+- Full `SKILL.md` outline with planned sections for Johansen,
+  VECM estimation, structural breaks
+- v0.2.0 will fill in 4 more demos
+
+Plus two more scaffold repos:
+
+- **[garch-volatility](https://github.com/Pouyasharp/garch-volatility)** —
+  GARCH(1,1) + VaR + Kupiec demo, planned GJR / EGARCH / DCC
+- **[panel-data-causal](https://github.com/Pouyasharp/panel-data-causal)** —
+  FE / RE / Hausman demo, planned two-way FE / Arellano-Bond /
+  Hausman-Taylor
+
+</td>
+</tr>
 </table>
 
 ### 🤖 Agentic systems
@@ -253,6 +294,6 @@ or DM `@Pouyasharp` on X.
 
 <div align="center">
 
-<sub>Built with care · Last updated 2026-06-15 · 10 active repos</sub>
+<sub>Built with care · Last updated 2026-06-15 · 12 active repos (2 scaffold, 1 writeup, 4 marketing, 5 econometrics)</sub>
 
 </div>
