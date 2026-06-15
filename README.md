@@ -176,24 +176,24 @@ PhD-level **deep-dive** on the causal-inference half of Stage 4:
 </td>
   <td>
 
-#### [cointegration-vecm](https://github.com/Pouyasharp/cointegration-vecm) (scaffold)
+#### [cointegration-vecm](https://github.com/Pouyasharp/cointegration-vecm) · [garch-volatility](https://github.com/Pouyasharp/garch-volatility) · [panel-data-causal](https://github.com/Pouyasharp/panel-data-causal)
 
-PhD-level deep-dive on the **cointegration / VECM** half of Stage 3
-(planned; currently a scaffold):
+Three PhD-level deep-dives on the technical corners of Stage 3 and 4:
 
-- 1 working demo: Engle-Granger 2-step on synthetic data
-  (spurious vs cointegrated series)
-- Full `SKILL.md` outline with planned sections for Johansen,
-  VECM estimation, structural breaks
-- v0.2.0 will fill in 4 more demos
+- **`cointegration-vecm`** (v0.2.0) — 5 demos on the cointegration half
+  of Stage 3: Engle-Granger 2-step, Johansen trace test, VECM
+  estimation, Granger causality in VECM (weak + strong exogeneity),
+  Gregory-Hansen structural breaks
+- **`garch-volatility`** (v0.2.0) — 5 demos on the volatility half
+  of Stage 3: GARCH(1,1), GJR-GARCH (leverage + News Impact), EGARCH
+  (log-vol), DCC (time-varying correlation), VaR backtest (Kupiec +
+  Christoffersen)
+- **`panel-data-causal`** (v0.2.0) — 5 demos on the panel half of
+  Stage 4: FE/RE/Hausman, two-way FE + cluster-robust SE, Arellano-Bond
+  GMM (Nickell bias), Mundlak correction, Hausman-Taylor (manual 2SLS)
 
-Plus two more scaffold repos:
-
-- **[garch-volatility](https://github.com/Pouyasharp/garch-volatility)** —
-  GARCH(1,1) + VaR + Kupiec demo, planned GJR / EGARCH / DCC
-- **[panel-data-causal](https://github.com/Pouyasharp/panel-data-causal)** —
-  FE / RE / Hausman demo, planned two-way FE / Arellano-Bond /
-  Hausman-Taylor
+Each ships ~500-600 line `SKILL.md`, INDEX.md, REFINEMENT.md, and a
+package-specific gotcha bank.
 
 </td>
 </tr>
@@ -294,6 +294,6 @@ or DM `@Pouyasharp` on X.
 
 <div align="center">
 
-<sub>Built with care · Last updated 2026-06-15 · 12 active repos (2 scaffold, 1 writeup, 4 marketing, 5 econometrics)</sub>
+<sub>Built with care · Last updated 2026-06-15 · 12 active repos (3 scaffold-deepened today, 1 writeup, 4 marketing, 5 econometrics) · 2 archived (2023)</sub>
 
 </div>
