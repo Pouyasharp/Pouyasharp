@@ -290,7 +290,7 @@ than architectural novelty.
 ## Get in touch
 
 The fastest way is GitHub — open an issue on any of the repos above
-or DM `@Pouyasharp` on X.
+or visit [PouyaZargar.com](https://www.PouyaZargar.com).
 
 <div align="center">
 
